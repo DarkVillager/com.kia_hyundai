@@ -145,7 +145,7 @@
 						"en": "App language"
 				},
 				"hint": {
-					"en": "This setting will effect the language used in the official Kia Connect app. Works for EU region only at the moment." },
+					"en": "This setting will effect the language used in the official Hyundai Bluelink app. Works for EU region only at the moment." },
 				"values": [
 						{
 								"id": "cs",

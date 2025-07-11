@@ -1,20 +1,20 @@
 /*
 Copyright 2025, RM de Gruijter (rmdegruijter@gmail.com)
 
-This file is part of com.kia and com.hyundai
+This file is part of com.hyundai
 
-com.kia is free software: you can redistribute it and/or modify
+com.hyundai is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-com.kia is distributed in the hope that it will be useful,
+com.hyundai is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with com.kia. If not, see <http://www.gnu.org/licenses/>.
+along with com.hyundai. If not, see <http://www.gnu.org/licenses/>.
 */
 
 'use strict';
@@ -25,7 +25,7 @@ module.exports = class MyApp extends Homey.App {
 
   async onInit() {
     if (process.version.includes('v16')) {
-      const excerpt = 'The Kia/Hyundai app does not work on older Homeys. Please use a Homey Pro 2024.';
+      const excerpt = 'The Hyundai/Hyundai app does not work on older Homeys. Please use a Homey Pro 2024.';
       await this.homey.notifications.createNotification({ excerpt });
       throw Error('This app only works with Node V18+');
     }

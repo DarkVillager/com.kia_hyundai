@@ -1,5 +1,5 @@
 {
-  "id": "com.kia",
+  "id": "com.hyundai",
   "version": "1.2.0",
   "compatibility": ">=12.4.5",
   "sdk": 3,
@@ -7,11 +7,11 @@
     "local"
   ],
   "name": {
-    "en": "Kia"
+    "en": "Hyundai"
   },
-  "brandColor": "#BB162C",
+  "brandColor": "#003366",
   "description": {
-    "en": "Movement that inspires"
+    "en": "The future is now!"
   },
   "tags": {
     "en": [
@@ -47,5 +47,5 @@
   "copyright": "R.M. de Gruijter (rmdegruijter@gmail.com)",
   "license": "GPL-3.0-or-later",
   "homeyCommunityTopicId": 32487,
-  "support": "https://github.com/gruijter/com.kia_hyundai/issues"
+  "support": "https://github.com/gruijter/com.hyundai_hyundai/issues"
 }
