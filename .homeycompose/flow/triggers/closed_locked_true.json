@@ -1,0 +1,15 @@
+{
+    "title": {
+        "en": "Doors opened or unlocked"
+    },
+    "titleFormatted": {
+		"en": "Doors opened or unlocked"
+    },
+    "args": [
+        {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=car"
+        }
+    ]
+}

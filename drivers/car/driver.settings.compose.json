@@ -1,0 +1,345 @@
+[
+	{
+		"type": "group",
+		"label": {
+				"en": "Car information"
+		},
+		"children": [
+				{
+						"id": "nameOrg",
+						"type": "label",
+						"label": {
+								"en": "Name"
+						},
+						"value": "",
+						"hint": {
+								"en": "Car name as per manufacturer."
+						}
+				},
+				{
+						"id": "idOrg",
+						"type": "label",
+						"label": {
+								"en": "ID"
+						},
+						"value": "",
+						"hint": {
+								"en": "Car ID as per manufacturer."
+						}
+				},
+				{
+						"id": "vin",
+						"type": "label",
+						"label": {
+								"en": "VIN"
+						},
+						"value": "",
+						"hint": {
+								"en": "Car VIN as per manufacturer."
+						}
+				},
+				{
+						"id": "regDate",
+						"type": "label",
+						"label": {
+								"en": "Registration date"
+						},
+						"value": ""
+				},
+				{
+						"id": "generation",
+						"type": "label",
+						"label": {
+								"en": "Generation"
+						},
+						"value": ""
+				},
+				{
+					"id": "engine",
+					"type": "label",
+					"label": {
+							"en": "Engine"
+					},
+					"hint": {
+						"en": "Full EV (Electric Vehicle), PHEV (Plugin Hybrid Electric Vehicle), or HEV/ICE (Hybrid Electric Vehicle/Internal Combustion Engine)"
+					},
+					"value": ""
+				}
+		]
+	},
+	{
+		"type": "group",
+		"label": {
+				"en": "Connection settings"
+		},
+		"children": [
+			{
+					"id": "username",
+					"type": "text",
+					"label": {
+							"en": "Username"
+					},
+					"value": ""
+			},
+			{
+					"id": "password",
+					"type": "password",
+					"label": {
+							"en": "Password"
+					},
+					"value": ""
+			},
+			{
+					"id": "pin",
+					"type": "password",
+					"label": {
+							"en": "PIN"
+					},
+					"value": ""
+			},
+			{
+					"id": "region",
+					"type": "dropdown",
+					"value": "EU",
+					"label": {
+							"en": "Region"
+					},
+					"values": [
+							{
+									"id": "EU",
+									"label": {
+											"en": "EU"
+									}
+							},
+							{
+									"id": "US",
+									"label": {
+											"en": "US"
+									}
+							},
+							{
+									"id": "CA",
+									"label": {
+											"en": "CA"
+									}
+							},
+							{
+									"id": "AU",
+									"label": {
+											"en": "AU"
+									}
+							},
+							{
+									"id": "CN",
+									"label": {
+											"en": "CN"
+									}
+							}
+					]
+			},
+			{
+				"id": "language",
+				"type": "dropdown",
+				"value": "en",
+				"label": {
+						"en": "App language"
+				},
+				"hint": {
+					"en": "This setting will effect the language used in the official Kia Connect app. Works for EU region only at the moment." },
+				"values": [
+						{
+								"id": "cs",
+								"label": {
+										"en": "CS"
+								}
+						},
+						{
+							"id": "da",
+							"label": {
+									"en": "DA"
+							}
+						},
+						{
+							"id": "nl",
+							"label": {
+									"en": "NL"
+							}
+						},
+						{
+							"id": "en",
+							"label": {
+									"en": "EN"
+							}
+						},
+						{
+							"id": "fi",
+							"label": {
+									"en": "FI"
+							}
+						},
+						{
+							"id": "fr",
+							"label": {
+									"en": "FR"
+							}
+						},
+						{
+							"id": "de",
+							"label": {
+									"en": "DE"
+							}
+						},
+						{
+							"id": "it",
+							"label": {
+									"en": "IT"
+							}
+						},
+						{
+							"id": "pl",
+							"label": {
+									"en": "PL"
+							}
+						},
+						{
+							"id": "hu",
+							"label": {
+									"en": "HU"
+							}
+						},
+						{
+							"id": "no",
+							"label": {
+									"en": "NO"
+							}
+						},
+						{
+							"id": "sk",
+							"label": {
+									"en": "SK"
+							}
+						},
+						{
+							"id": "es",
+							"label": {
+									"en": "ES"
+							}
+						},
+						{
+							"id": "sv",
+							"label": {
+									"en": "SV"
+							}
+						}
+				]
+			}
+		]
+	},
+	{
+		"type": "group",
+		"label": {
+				"en": "Car status refresh settings"
+		},
+		"children": [
+			{
+				"id": "pollInterval",
+				"type": "number",
+				"label": {
+						"en": "Update interval (minutes)"
+				},
+				"hint": {
+					"en": "Interval for checking the server for a status change.\nAttention: Homey will only receive status updates from the car when you park the car, or by doing a manual refresh!\nWARNING: A low poll interval can get you locked out of the server!"	},
+				"min": 5,
+				"value": 15
+			},
+			{
+				"id": "pollIntervalEngineOn",
+				"type": "number",
+				"label": {
+					"en": "Update interval when engine is on (minutes)"
+				},
+				"hint": {
+					"en": "Interval for checking the car status while the engine is on.\nAttention: for Homey to know that the engine is on, a manual refresh or cloud refresh must be performed!\nWARNING: A low poll interval can get you locked out of the server!\nDisable this function by setting the time to 0."				},
+				"min": 0,
+				"value": 10,
+				"step": 1
+			},
+			{
+				"id": "pollIntervalForced",
+				"type": "number",
+				"label": {
+					"en": "24/7 Car update interval (minutes)"
+				},
+				"hint": {
+					"en": "Interval for checking the car status also when the engine is off.\nWARNING: This will drain your 12V battery fast!\nA low poll interval can get you locked out of the server\nDisable this function by setting the time to 0."				},
+				"min": 0,
+				"value": 0,
+				"step": 15
+			}
+		]
+	},
+	{
+		"type": "group",
+		"label": {
+            "en": "Home location settings"
+		},
+		"children": [
+				{
+						"id": "lat",
+						"type": "number",
+						"label": {
+							"en": "Home latitude"
+						},
+						"hint": {
+							"en": "Home location is used to calculate the car's distance."
+						},
+						"value": 0
+				},
+				{
+						"id": "lon",
+						"type": "number",
+						"label": {
+							"en": "Home longitude"
+						},
+						"hint": {
+							"en": "Home location is used to calculate the car's distance."
+						},
+						"value": 0
+				}
+		]
+	},
+	{
+		"type": "group",
+		"label": {
+            "en": "Various settings"
+		},
+		"children": [
+			{
+					"id": "batteryAlarmLevel",
+					"type": "number",
+					"label": {
+						"en": "12V battery alarm level (%)"
+					},
+					"hint": {
+						"en": "Homey will raise an alarm when the 12V battery charge is below this level."
+					},
+					"min": 0,
+					"max": 100,
+					"value": 50
+			},
+			{
+					"id": "EVbatteryAlarmLevel",
+					"type": "number",
+					"label": {
+						"en": "EV battery alarm level (%)"
+					},
+					"hint": {
+						"en": "Homey will raise an alarm when the EV battery charge is below this level."
+					},
+					"min": 0,
+					"max": 100,
+					"value": 5
+			}
+		]
+	}
+]

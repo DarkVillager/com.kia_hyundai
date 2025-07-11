@@ -1,0 +1,15 @@
+{
+    "title": {
+        "en": "The A/C turned off"
+    },
+    "titleFormatted": {
+        "en": "The A/C turned off"
+    },
+    "args": [
+        {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=car"
+        }
+    ]
+}

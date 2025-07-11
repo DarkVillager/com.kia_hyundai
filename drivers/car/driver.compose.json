@@ -1,0 +1,86 @@
+{
+  "name": {
+    "en": "Car"
+  },
+  "class": "vehicle",
+ "energy": {
+    "electricCar": true
+  },
+  "capabilities": [
+    "target_temperature",
+    "charge_target_slow",
+    "charge_target_fast",
+    "refresh_status",
+    "locked",
+    "defrost",
+    "climate_control",
+    "last_refresh",
+    "engine",
+    "closed_locked",
+    "location",
+    "meter_distance",
+    "measure_speed",
+    "measure_range",
+    "ev_charging_state",
+    "measure_power.fuel_economy",
+    "charge",
+    "measure_odo",
+    "alarm_tire_pressure",
+    "alarm_bat",
+    "measure_battery",
+    "measure_battery.12V",
+    "measure_power.charge",
+    "latitude",
+    "longitude"
+  ],
+  "capabilitiesOptions": {
+    "measure_speed": {
+      "units": {
+        "en": "km/h"
+      }
+    },
+    "meter_power.fuel_economy": {
+      "title": {
+        "en": "Drive economy"
+      },
+      "units": {
+        "en": "km/kWh"
+      }
+    },
+    "measure_power.charge": {
+      "title": {
+        "en": "Charge power"
+      }
+    },
+    "measure_battery.12V": {
+      "title": {
+        "en": "12V Battery"
+      }
+    }
+  },
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [ "cloud" ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "pair"
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ]
+}

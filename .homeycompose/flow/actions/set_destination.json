@@ -1,0 +1,25 @@
+{
+    "title": {
+        "en": "Set navigation destination"
+    },
+    "titleFormatted": {
+        "en": "Set navigation destination:[[destination]]"
+    },
+    "args": [
+      {
+          "type": "device",
+          "name": "device",
+          "filter": "driver_id=car"
+      },
+      {
+          "type": "text",
+          "name": "destination",
+          "title": {
+            "en": "Destination"
+          },
+          "placeholder": {
+            "en": "address or lat,lon"
+          }
+      }
+  ]
+}

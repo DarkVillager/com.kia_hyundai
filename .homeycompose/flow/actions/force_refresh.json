@@ -1,0 +1,15 @@
+{
+    "title": {
+        "en": "Force status refresh (once)"
+    },
+    "titleFormatted": {
+        "en": "Force status refresh (once)"
+    },
+    "args": [
+        {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=car"
+        }
+    ]
+}

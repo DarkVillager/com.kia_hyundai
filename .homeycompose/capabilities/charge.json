@@ -1,0 +1,18 @@
+{
+	"type": "boolean",
+	"title": {
+		"en": "Charge"
+	},
+	"getable": true,
+	"setable": true,
+	"insights": true,
+	"insightsTitleTrue": {
+		"en": "Charging on"
+	},
+	"insightsTitleFalse": {
+		"en": "Charging off"
+	},
+	"uiComponent": "button",
+	"uiQuickAction": false,
+	"icon": "./assets/charging.svg"
+}

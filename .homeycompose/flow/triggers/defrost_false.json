@@ -1,0 +1,15 @@
+{
+    "title": {
+        "en": "Defrosting turned off"
+    },
+    "titleFormatted": {
+        "en": "Defrosting turned off"
+    },
+    "args": [
+        {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=car"
+        }
+    ]
+}

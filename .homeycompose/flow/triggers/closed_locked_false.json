@@ -1,0 +1,15 @@
+{
+    "title": {
+        "en": "Doors closed and locked"
+    },
+    "titleFormatted": {
+		"en": "Doors closed and locked"
+    },
+    "args": [
+        {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=car"
+        }
+    ]
+}

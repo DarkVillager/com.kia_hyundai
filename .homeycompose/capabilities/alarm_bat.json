@@ -1,0 +1,17 @@
+{
+	"type": "boolean",
+	"title": {
+		"en": "Battery alarm"
+	},
+	"getable": true,
+	"setable": false,
+	"insights": true,
+	"insightsTitleTrue": {
+		"en": "Battery alarm on"
+	},
+	"insightsTitleFalse": {
+		"en": "Battery alarm off"
+	},
+	"uiComponent": "sensor",
+	"icon": "./assets/battery_alarm.svg"
+}

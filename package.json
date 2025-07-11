@@ -1,0 +1,22 @@
+{
+  "name": "com.kia",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts --ignore-path .gitignore .",
+    "start": "set NODE_ENV=production && node app"
+  },
+  "engines": {
+    "node": ">=12.16.1"
+  },
+  "devDependencies": {
+    "@types/geopoint": "^1.0.3",
+    "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.12",
+    "eslint": "^7.32.0",
+    "eslint-config-athom": "^3.1.5"
+  },
+  "dependencies": {
+    "bluelinky": "^9.1.0",
+    "geopoint": "^1.0.1"
+  }
+}

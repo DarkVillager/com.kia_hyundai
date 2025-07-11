@@ -1,0 +1,15 @@
+{
+    "title": {
+        "en": "Turn charging on"
+    },
+    "titleFormatted": {
+        "en": "Turn charging on"
+    },
+    "args": [
+        {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=car"
+        }
+    ]
+}

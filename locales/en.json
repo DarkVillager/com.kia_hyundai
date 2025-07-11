@@ -1,0 +1,18 @@
+{
+  "pair": {
+    "title": "Pair your Kia car",
+    "subtitle": "Use your Kia Connect credentials",
+    "region": "Select your region",
+    "username": "Username",
+    "password": "Password",
+    "pin": "4-digit PIN",
+    "validate": "Continue",
+
+    "required": "You need to fill in all fields.",
+    "invalid_pin": "Invalid PIN, enter your 4-digit PIN.",
+    "no_vehicles": "No vehicles found for this account.",
+    "pairing_failed": "Pairing failed: __error__"
+
+  },
+  "migrating": "Migrating device, please wait..."
+}

@@ -1,0 +1,15 @@
+{
+    "title": {
+        "en": "New car status"
+    },
+    "titleFormatted": {
+        "en": "New car status"
+    },
+    "args": [
+        {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=car"
+        }
+    ]
+}

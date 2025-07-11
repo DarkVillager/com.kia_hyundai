@@ -1,0 +1,51 @@
+{
+  "id": "com.kia",
+  "version": "1.1.1",
+  "compatibility": ">=12.4.5",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Kia"
+  },
+  "brandColor": "#BB162C",
+  "description": {
+    "en": "Movement that inspires"
+  },
+  "tags": {
+    "en": [
+      "smart car",
+      "EV",
+      "PHEV",
+      "Electric Vehicle",
+      "hyundai",
+      "kia",
+      "niro",
+      "ionic",
+      "genesis",
+      "uvo",
+      "bluelink",
+      "location",
+      "geofence"
+    ]
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [
+    "homey:manager:geolocation"
+  ],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "R.M. de Gruijter"
+  },
+  "copyright": "R.M. de Gruijter (rmdegruijter@gmail.com)",
+  "license": "GPL-3.0-or-later",
+  "homeyCommunityTopicId": 32487,
+  "support": "https://github.com/gruijter/com.kia/issues"
+}

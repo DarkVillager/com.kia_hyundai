@@ -1,0 +1,17 @@
+{
+	"type": "boolean",
+	"title": {
+		"en": "Tire pressure alarm"
+	},
+	"getable": true,
+	"setable": false,
+	"insights": true,
+	"insightsTitleTrue": {
+		"en": "Tire pressure alarm on"
+	},
+	"insightsTitleFalse": {
+		"en": "Tire pressure alarm off"
+	},
+	"uiComponent": "sensor",
+	"icon": "./assets/alarm_tire_pressure.svg"
+}
