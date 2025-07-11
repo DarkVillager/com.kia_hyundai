@@ -1,6 +1,6 @@
 {
   "id": "com.kia",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "compatibility": ">=12.4.5",
   "sdk": 3,
   "platforms": [
@@ -47,5 +47,5 @@
   "copyright": "R.M. de Gruijter (rmdegruijter@gmail.com)",
   "license": "GPL-3.0-or-later",
   "homeyCommunityTopicId": 32487,
-  "support": "https://github.com/gruijter/com.kia/issues"
+  "support": "https://github.com/gruijter/com.kia_hyundai/issues"
 }
