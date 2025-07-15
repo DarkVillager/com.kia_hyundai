@@ -1,7 +1,7 @@
 {
 	"type": "string",
 	"title": {
-		"en": "Location"
+		"en": "Car location"
 	},
 	"desc": {
 		"en": "Location of the car"
