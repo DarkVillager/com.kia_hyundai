@@ -1,4 +1,7 @@
 {
+  "1.2.1": {
+    "en": "Minor usability tweaks."
+  },
   "1.2.0": {
     "en": "Fixed car parked detection. Updated icons. Added capability migration."
   },

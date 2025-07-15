@@ -1,7 +1,7 @@
 {
 	"type": "number",
 	"title": {
-		"en": "Distance"
+		"en": "Home distance"
 	},
 	"units": {
 		"en": "km"
