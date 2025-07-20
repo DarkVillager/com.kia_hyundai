@@ -122,12 +122,14 @@ module.exports = class MyDriver extends Homey.Driver {
           this.log(vehicle.vehicleConfig);
           const status = await vehicle.status({ refresh: false, parsed: false });
           // console.dir(status, { depth: null, colors: true });
-          const isEV = !!status.evStatus || !!status?.Green?.ChargingInformation;
-          const isICE = !!status.dte || !!status.fuelLevel || !!status?.evStatus?.drvDistance?.[0]?.rangeByFuel?.gasModeRange?.value;
+          const isPEV = !!status.evStatus || !!status?.Green?.ChargingInformation?.ConnectorFastening;
+          const isICE = !!status.dte || !!status.fuelLevel
+            || !!status?.evStatus?.drvDistance?.[0]?.rangeByFuel?.gasModeRange?.value
+            || !!status?.Drivetrain?.InternalCombustionEngine;
           let engine = 'HEV/ICE';
-          if (isEV && isICE) engine = 'PHEV';
-          if (isEV && !isICE) engine = 'Full EV';
-          if (isEV && !isICE && vehicle?.vehicleConfig?.ccuCCS2ProtocolSupport) engine = 'Full EV ccuCCS2';
+          if (isPEV && isICE) engine = 'PHEV';
+          if (isPEV && !isICE) engine = 'Full EV';
+          if (isPEV && !isICE && vehicle?.vehicleConfig?.ccuCCS2ProtocolSupport) engine = 'Full EV ccuCCS2';
           return {
             name: vehicle.vehicleConfig.nickname,
             data: {
