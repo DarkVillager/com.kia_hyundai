@@ -10,7 +10,7 @@
   "name": {
     "en": "Hyundai"
   },
-  "brandColor": "#003366",
+  "brandColor": "#003082",
   "description": {
     "en": "The future is now!"
   },
@@ -48,7 +48,7 @@
   "copyright": "R.M. de Gruijter (rmdegruijter@gmail.com)",
   "license": "GPL-3.0-or-later",
   "homeyCommunityTopicId": 32487,
-  "support": "https://github.com/gruijter/com.hyundai_hyundai/issues",
+  "support": "https://github.com/gruijter/com.kia_hyundai/issues",
   "flow": {
     "triggers": [
       {
